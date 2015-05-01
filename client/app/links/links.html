@@ -1,0 +1,11 @@
+<div id='container' ng-controller = 'LinksController' >
+  <div ng-repeat='n in data.links'>
+    <img src='../assets/redirect_icon.png'/>
+    <div class='info'>
+      <div class='visits'><span class='count'>{{n.visits}}</span> Visits</div>
+      <div class='title'>{{n.title}}</div>
+      <div class='original'>{{n.url}}</div>
+      <a href='api/links/{{n.code}}'>{{n.base_url}}/{{n.code}}</a>
+    </div>
+  </div>
+</div>

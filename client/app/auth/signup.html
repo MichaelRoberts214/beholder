@@ -1,0 +1,12 @@
+<div id='signup'>
+  <h1>signup</h1>
+  <form name="signupForm" ng-submit='signup()'>
+    <input name = 'name'type='text' ng-model='user.username' placeholder = 'username'required>
+    <input name = 'password' type="password" ng-model='user.password' placeholder = 'password' required>
+    <button>signup</button>
+  </form>
+  <div ng-if = 'signupForm.name.$error.required || signingForm.password.$error.required'>
+    <h2>Please provide unique username and password</h2>
+  </div>
+  <a href="#/signin">Already have an account? <strong>Signin</strong> ...</a>
+</div>

@@ -1,0 +1,20 @@
+<div id='container' ng-controller='ShortenController'>
+<!-- Your cºde here -->
+<form name='shortlyForm' novalidate>
+  <input name='link' type='url' ng-model='link.url' name='url' placeholder='Type link to shorten here' required
+  ng-class="{'error': shortlyForm.$invalid && shortlyForm.$dirty}"
+  >
+  <input type='submit' ng-disabled='shortlyForm.$invalid' ng-click='addLink($scope.link.url)' value='Shorten'>
+</form>
+<div ng-if='shortlyForm.link.$error.required && shortlyForm.$dirty' class="message">
+  <h2>URL Required</h2>
+</div>
+<div ng-show='shortlyForm.link.$error.url && shortlyForm.$dirty'
+  class="message">
+  <h2>Not a valid URL</h2>
+</div>
+  <img class='spinner' src='../assets/spiffygif_46x46.gif'>
+  <div class='message'></div>
+</div>
+
+
