@@ -37,6 +37,8 @@ bower install
 npm install
 ```
 
+Note: future work will be done to reduce extraneous dependencies. Beholder was built off of a separate built-out project.
+
 ## Get Started Locally
 
 To start the server, from within the root directory:
@@ -44,6 +46,8 @@ To start the server, from within the root directory:
 ```sh
 node index.js
 ```
+
+Beholder is now available to view at localhost:8000
 
 ## Contributing
 
