@@ -2,9 +2,6 @@
 logs
 *.log
 
-bower.json
-package.json
-
 # Runtime data
 pids
 *.pid
